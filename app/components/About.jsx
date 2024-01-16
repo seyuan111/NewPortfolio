@@ -19,7 +19,7 @@ const About = () => {
                     </div>
                     <div className="font-bold">
                         <p>Back in 2018, I have began learning my first language SQL, then I learned Java, then C++, then Python, and in 2021, I have focused on JavaScript. I have been working in JavaScript and moved to React and Next.
-                        then I've learned Node Express and MongoDB with NextJS to focus on building full-stack applications. I am focused on building Full-Stack applications. I am now working on building full-stack applications.
+                        Then I have learned Node Express and MongoDB with NextJS to focus on building full-stack applications. I am focused on building Full-Stack applications. I am now working on building full-stack applications.
                         </p>
                     </div>
                 </div>
