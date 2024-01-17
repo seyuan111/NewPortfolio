@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes, FaTwitter, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Link from 'next/link'
 
 const NavBar = () => {
@@ -16,11 +17,11 @@ const NavBar = () => {
         </div>
 
             <ul className="hidden md:flex">
-                <li className="cursor-pointer px-4 font-bold tracking-widest">Home</li>
-                <li className="cursor-pointer px-4 font-bold tracking-widest">About</li>
-                <li className="cursor-pointer px-4 font-bold tracking-widest">Skills</li>
-                <li className="cursor-pointer px-4 font-bold tracking-widest">Projects</li>
-                <li className="cursor-pointer px-4 font-bold tracking-widest">Contact</li>
+                <li className="cursor-pointer px-4 font-bold tracking-widest hover:border-b-2 hover:border-blue-700 duration-300"><ScrollLink to="Home" smooth={true} duration={500}>Home</ScrollLink></li>
+                <li className="cursor-pointer px-4 font-bold tracking-widest hover:border-b-2 hover:border-blue-700 duration-300"><ScrollLink to="About" smooth={true} duration={500}>About</ScrollLink></li>
+                <li className="cursor-pointer px-4 font-bold tracking-widest hover:border-b-2 hover:border-blue-700 duration-300"><ScrollLink to="Skills" smooth={true} duration={500}>Skills</ScrollLink></li>
+                <li className="cursor-pointer px-4 font-bold tracking-widest hover:border-b-2 hover:border-blue-700 duration-300"><ScrollLink to="Projects" smooth={true} duration={500}>Projects</ScrollLink></li>
+                <li className="cursor-pointer px-4 font-bold tracking-widest hover:border-b-2 hover:border-blue-700 duration-300"><ScrollLink to="Contact" smooth={true} duration={500}>Contact</ScrollLink></li>
             </ul>
 
         <div onClick={handleClick} className="md:hidden z-10">
@@ -28,11 +29,11 @@ const NavBar = () => {
         </div>
 
         <ul className={!nav ? "hidden" : "duration-400 absolute top-0 left-0 w-full h-screen bg-slate-800 text-blue-300 flex flex-col justify-center items-center font-bold tracking-widest"}>
-            <li className="py-4 cursor-pointer text-2xl">Home</li>
-            <li className="py-4 cursor-pointer text-2xl">About</li>
-            <li className="py-4 cursor-pointer text-2xl">Skills</li>
-            <li className="py-4 cursor-pointer text-2xl">Projects</li>
-            <li className="py-4 cursor-pointer text-2xl">Contact</li>
+            <li className="py-4 cursor-pointer text-2xl"><ScrollLink to="Home" smooth={true} duration={500}>Home</ScrollLink></li>
+            <li className="py-4 cursor-pointer text-2xl"><ScrollLink to="About" smooth={true} duration={500}>About</ScrollLink></li>
+            <li className="py-4 cursor-pointer text-2xl"><ScrollLink to="Skills" smooth={true} duration={500}>Skills</ScrollLink></li>
+            <li className="py-4 cursor-pointer text-2xl"><ScrollLink to="Projects" smooth={true} duration={500}>Projects</ScrollLink></li>
+            <li className="py-4 cursor-pointer text-2xl"><ScrollLink to="Contact" smooth={true} duration={500}>Contact</ScrollLink></li>
         </ul>
 
         <div className="hidden md:flex fixed flex-col top-[35%] left-0">

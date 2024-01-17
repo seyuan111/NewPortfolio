@@ -6,7 +6,7 @@ import 'tailwindcss/tailwind.css';
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen bg-slate-600">
+    <div id="Home" className="w-full h-screen bg-slate-600">
 
       <div className="px-8 max-w-[1000px] mx-auto flex flex-col justify-center h-full">
         <h1 className="text-blue-300 font-bold text-xl">Hello, I am</h1>
