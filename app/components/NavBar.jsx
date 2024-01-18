@@ -12,11 +12,11 @@ const NavBar = () => {
   return (
     <div className="fixed w-full h-[70px] flex justify-between items-center px-4 bg-slate-500 text-blue-300">
 
-        <div className="text-[#66bfbf] text-2xl font-bold cursor-pointer">
+        <div className="text-[#66bfbf] text-3xl border-2 font-Italliano rounded px-4 py-2 font-bold cursor-pointer">
             <h1><Link href='/'>SY</Link></h1>
         </div>
 
-            <ul className="hidden md:flex">
+            <ul className="hidden md:flex font-QuickSand text-xl">
                 <li className="cursor-pointer px-4 font-bold tracking-widest hover:border-b-2 hover:border-blue-700 duration-300"><ScrollLink to="Home" smooth={true} duration={500}>Home</ScrollLink></li>
                 <li className="cursor-pointer px-4 font-bold tracking-widest hover:border-b-2 hover:border-blue-700 duration-300"><ScrollLink to="About" smooth={true} duration={500}>About</ScrollLink></li>
                 <li className="cursor-pointer px-4 font-bold tracking-widest hover:border-b-2 hover:border-blue-700 duration-300"><ScrollLink to="Skills" smooth={true} duration={500}>Skills</ScrollLink></li>

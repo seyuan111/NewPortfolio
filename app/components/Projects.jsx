@@ -12,18 +12,18 @@ const Projects = () => {
   return (
     <div id="Projects" className="w-full md:h-screen bg-slate-600 text-blue-300">
 
-        <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+        <div className="max-w-[1000px] mx-auto p-6 py-[200px] flex flex-col justify-center w-full h-full">
 
           <div className="pb-8">
             <p className="text-3xl font-bold inline border-b-4 border-gray-300">My Projects</p>
           </div>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 my-6">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 my-6">
 
             <div className="shadow-lg shadow-gray-600 group container rounded-md flex justify-center items-center mx-auto mb-8 content-div">
               <div>
                 <span>
-                  <Image src={Snake} height={250} width={250}></Image>
+                  <Image src={Snake} height={200} width={250}></Image>
                 </span>
                 <div className="pt-6 text-center">
                   <p className="font-bold">The Snake Game</p>
@@ -37,7 +37,7 @@ const Projects = () => {
             <div className="shadow-lg shadow-gray-600 group container rounded-md flex justify-center items-center mx-auto mb-8 content-div">
               <div>
                 <span>
-                  <Image src={Sushi} height={250} width={250}></Image>
+                  <Image src={Sushi} height={200} width={250}></Image>
                 </span>
                 <div className="pt-6 text-center">
                 <p className="font-bold">Sushi Project</p>
@@ -51,7 +51,7 @@ const Projects = () => {
             <div className="shadow-lg shadow-gray-600 group container rounded-md flex justify-center items-center mx-auto mb-8 content-div">
               <div>
                 <span>
-                  <Image src={WickedWines} height={250} width={250}></Image>
+                  <Image src={WickedWines} height={200} width={250}></Image>
                 </span>
                 <div className="pt-6 text-center">
                   <p className="font-bold">Wicked Wines</p>
@@ -65,7 +65,7 @@ const Projects = () => {
             <div className="shadow-lg shadow-gray-600 group container rounded-md flex justify-center items-center mx-auto mb-8 content-div">
               <div>
                 <span>
-                  <Image src={DeansList} height={250} width={250}></Image>
+                  <Image src={DeansList} height={200} width={250}></Image>
                 </span>
                 <div className="pt-6 text-center">
                   <p className="font-bold">The Deans List</p>
@@ -79,7 +79,7 @@ const Projects = () => {
             <div className="shadow-lg shadow-gray-600 group container rounded-md flex justify-center items-center mx-auto mb-8 content-div">
               <div>
                 <span>
-                  <Image src={PharmRx} height={250} width={250}></Image>
+                  <Image src={PharmRx} height={200} width={250}></Image>
                 </span>
                 <div className="pt-6 text-center">
                   <p className="font-bold">PharmRx</p>
@@ -93,7 +93,7 @@ const Projects = () => {
             <div className="shadow-lg shadow-gray-600 group container rounded-md flex justify-center items-center mx-auto mb-8 content-div">
               <div>
                 <span>
-                  <Image src={Connect} height={250} width={250}></Image>
+                  <Image src={Connect} height={200} width={250}></Image>
                 </span>
                 <div className="pt-6 text-center">
                   <p className="font-bold">Connect 4</p>

@@ -14,7 +14,7 @@ const About = () => {
                 </div>
                 <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
                     <div className="text-3xl font-bold">
-                        <Image src={Sean} height={200} width={250}/>
+                        <Image className="rounded-md" src={Sean} height={200} width={250}/>
                     </div>
                     <div className="font-bold">
                         <p>I am a Software Engineer in New York. I am proficient in both frontend and backend development. I have knowledge in HTML, CSS, Javascript, Node, MongoDB, and React. As a software Engineer, I love to connect with others, build my networks, and build projects with group members.
