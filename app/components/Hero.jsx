@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { FaArrowRight } from "react-icons/fa";
+import Typewriter from 'typewriter-effect'; 
 import 'tailwindcss/tailwind.css';
 
 const Hero = () => {
@@ -10,8 +11,32 @@ const Hero = () => {
 
       <div className="px-8 max-w-[1000px] mx-auto flex flex-col font-Cinzel justify-center h-full">
         <h1 className="text-blue-300 font-bold text-2xl">Hello, I am</h1>
-        <h2 className="text-4xl font-bold sm:text-5xl text-blue-200">Sean Yuan</h2>
-        <h2 className="text-4xl font-bold sm:text-5xl text-blue-400">I am a full stack developer</h2>
+        <Typewriter 
+        onInit={(typewriter) => { 
+          typewriter.typeString('<span class="text-4xl font-bold sm:text-5xl text-blue-200">Sean Yuan</span>') 
+            .callFunction(() => { 
+              console.log('String typed out!'); 
+            }) 
+            .pauseFor(2000) 
+            .callFunction(() => { 
+              console.log('All strings were deleted'); 
+            }) 
+            .start(); 
+        }} 
+      />
+        <Typewriter 
+        onInit={(typewriter) => { 
+          typewriter.typeString('<span class="text-4xl font-bold sm:text-5xl text-blue-400">I am a full-stack developer</span>') 
+            .callFunction(() => { 
+              console.log('String typed out!'); 
+            }) 
+            .pauseFor(3000) 
+            .callFunction(() => { 
+              console.log('All strings were deleted'); 
+            }) 
+            .start(); 
+        }} 
+      /> 
         <p className="py-4 text-blue-200 max-2-[700px] font-bold">I work in various languages such as HTML, CSS, and JavaScript
         as well as Node, Express MongoDB, React and Next. I am focusing on
         building full-stack applications</p>
