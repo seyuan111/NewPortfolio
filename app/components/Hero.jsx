@@ -10,7 +10,19 @@ const Hero = () => {
     <div id="Home" className="w-full h-screen bg-slate-600">
 
       <div className="px-8 max-w-[1000px] mx-auto flex flex-col font-Cinzel justify-center h-full">
-        <h1 className="text-blue-300 font-bold text-2xl">Hello, I am</h1>
+        <Typewriter 
+        onInit={(typewriter) => { 
+          typewriter.typeString('<span class="text-blue-300 font-bold text-2xl">Hello, I am</span>') 
+            .callFunction(() => { 
+              console.log('String typed out!'); 
+            }) 
+            .pauseFor(2000) 
+            .callFunction(() => { 
+              console.log('All strings were deleted'); 
+            }) 
+            .start(); 
+        }} 
+      />
         <Typewriter 
         onInit={(typewriter) => { 
           typewriter.typeString('<span class="text-4xl font-bold sm:text-5xl text-blue-200">Sean Yuan</span>') 

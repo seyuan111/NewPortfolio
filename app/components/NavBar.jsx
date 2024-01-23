@@ -9,6 +9,19 @@ const NavBar = () => {
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
 
+    const handleNavLinkClick = () => {
+        setNav(false);
+    };
+
+    
+    const scrollToElement = (elementId) => {
+        scroll.scrollTo(document.getElementById(elementId).offsetTop, {
+            duration: 500,
+            smooth: true
+        });
+        handleNavLinkClick(); // Close the navbar after scrolling
+    };
+
   return (
     <div className="fixed w-full h-[70px] flex justify-between items-center px-4 bg-slate-500 text-blue-300">
 
@@ -29,11 +42,11 @@ const NavBar = () => {
         </div>
 
         <ul className={!nav ? "hidden" : "duration-400 absolute top-0 left-0 w-full h-screen bg-slate-800 text-blue-300 flex flex-col justify-center items-center font-bold tracking-widest"}>
-            <li className="py-4 cursor-pointer text-2xl"><ScrollLink to="Home" smooth={true} duration={500}>Home</ScrollLink></li>
-            <li className="py-4 cursor-pointer text-2xl"><ScrollLink to="About" smooth={true} duration={500}>About</ScrollLink></li>
-            <li className="py-4 cursor-pointer text-2xl"><ScrollLink to="Skills" smooth={true} duration={500}>Skills</ScrollLink></li>
-            <li className="py-4 cursor-pointer text-2xl"><ScrollLink to="Projects" smooth={true} duration={500}>Projects</ScrollLink></li>
-            <li className="py-4 cursor-pointer text-2xl"><ScrollLink to="Contact" smooth={true} duration={500}>Contact</ScrollLink></li>
+            <li className="py-4 cursor-pointer text-2xl" onClick={() => scrollToElement("Home")}>Home</li>
+            <li className="py-4 cursor-pointer text-2xl" onClick={() => scrollToElement("About")}>About</li>
+            <li className="py-4 cursor-pointer text-2xl" onClick={() => scrollToElement("Skills")}>Skills</li>
+            <li className="py-4 cursor-pointer text-2xl" onClick={() => scrollToElement("Projects")}>Projects</li>
+            <li className="py-4 cursor-pointer text-2xl" onClick={() => scrollToElement("Contact")}>Contact</li>
         </ul>
 
         <div className="hidden md:flex fixed flex-col top-[35%] left-0">
