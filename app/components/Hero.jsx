@@ -49,9 +49,17 @@ const Hero = () => {
             .start(); 
         }} 
       /> 
-        <p className="py-4 text-blue-200 max-2-[700px] font-bold">I work in various languages such as HTML, CSS, and JavaScript
+        <p className="py-4 text-blue-200 max-w-[700px] font-bold">I work in various languages such as HTML, CSS, and JavaScript
         as well as Node, Express MongoDB, React and Next. I am focusing on
         building full-stack applications</p>
+
+        <Typewriter
+        options={{
+          strings: ['HTML', 'CSS', 'JavaScript', 'Node', 'Express', 'MongoDB', 'React', 'Next'],
+          autoStart: true,
+          loop: true,
+        }}
+      />
 
         <div>
           <button><Link className="group text-xl text-white px-6 py-3 my-2 rounded-md bg-gray-400 flex items-center hover:bg-black duration-300" href="https://docs.google.com/document/d/1Fn0YlAT7r5QCfNNefyHRsO0xpyC1PYDCkxxhIImHUzY/edit" target="_blank">Resume <span className="group-hover:rotate-90 duration-300"><FaArrowRight className="ml-2" size={20}/></span></Link></button></div>

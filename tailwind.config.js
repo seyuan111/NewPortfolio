@@ -12,7 +12,9 @@ module.exports = {
         QuickSand: ['Quicksand', "sans-serif"],
         Teko : ["Teko', sans-serif"],
         Cinzel: ["Cinzel, serif"],
-        Italliano: ["Italianno, cursive"]
+        Italliano: ["Italianno, cursive"],
+        Rubik: ["Rubik Doodle Triangles, system-ui"],
+        Zeyada: ['Zeyada, cursive']
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
