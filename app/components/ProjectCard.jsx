@@ -11,8 +11,8 @@ const ProjectCard = ({ image, title, description, githubLink, projectLink }) => 
           <h2 className="text-xl font-bold mb-2">{title}</h2>
           <p className="text-sm text-blue-300 mb-4">{description}</p>
           <div className="flex">
-            <Link href={githubLink} className="bg-gray-300 text-gray-800 px-4 py-2 rounded-md mr-2 hover:bg-gray-400">GitHub</Link>
-            <Link href={projectLink} className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Project</Link>
+            <Link href={githubLink} className="bg-gray-300 text-gray-800 px-4 py-2 rounded-md mr-2 hover:bg-gray-400" target="_blank">GitHub</Link>
+            <Link href={projectLink} className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600" target="_blank">Project</Link>
           </div>
         </div>
       </div>
