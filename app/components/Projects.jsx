@@ -7,10 +7,11 @@ import PharmRx from '../assets/PharmRx.png'
 import WickedWines from '../assets/WickedWines.png'
 import DeansList from '../assets/DeansList.png'
 import Connect from '../assets/Connect.png'
+import ProjectCard from '../components/ProjectCard'
 
 const Projects = () => {
   return (
-    <div id="Projects" className="w-full md:h-screen bg-slate-600 text-blue-300">
+    <div id="Projects" className="bg-slate-600 text-blue-300">
 
         <div className="max-w-[1000px] mx-auto p-6 flex flex-col justify-center w-full h-full">
 
@@ -18,103 +19,55 @@ const Projects = () => {
             <p className="text-3xl font-bold inline border-b-4 border-gray-300">My Projects</p>
           </div>
 
-          <div className=".grid grid sm:grid-cols-2 md:grid-cols-3 gap-8 my-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-6">
 
-            <div className="shadow-lg shadow-gray-600 group container rounded-md flex flex-col justify-center items-center mx-auto mb-8 content-div">
-              <div>
-                <span>
-                  <Image src={Snake} height={200} width={250}></Image>
-                </span>
-                <div className="pt-6 text-center">
-                  <p className="font-bold">The Snake Game</p>
-                  <p>used with HTML, CSS, and JavaScript.</p>
-                  <div className="flex justify-center space-x-4">
-                    <button className="text-center rounded-md px-4 py-2 m-2 hover:bg-red-800 duration-300 bg-red-500 text-white font-bold"><Link href="https://github.com/seyuan111/SnakeGame" target="_blank">Github</Link></button>
-                    <button className="text-center rounded-md px-4 py-2 m-2 hover:bg-blue-800 duration-300 bg-blue-500 text-white font-bold"><Link href="https://thesnakegame1.netlify.app/" target="_blank">Project</Link></button>
-                  </div>  
-                </div>
-              </div>
-            </div>
+          <ProjectCard
+          image={Snake}
+          title="The Snake Game"
+          description="Used with HTML, CSS, and JavaScript."
+          githubLink="https://github.com/seyuan111/SnakeGame"
+          projectLink="https://thesnakegame1.netlify.app/"
+          />
 
-            <div className="shadow-lg shadow-gray-600 group container rounded-md flex flex-col justify-center items-center mx-auto mb-8 content-div">
-              <div>
-                <span>
-                  <Image src={Sushi} height={200} width={250}></Image>
-                </span>
-                <div className="pt-6 text-center">
-                <p className="font-bold">Sushi Project</p>
-                <p class="card-text">This is built with NextJS</p>
-                <div className="flex justify-center space-x-4">
-                  <button className="text-center rounded-md px-4 py-2 m-2 hover:bg-red-800 duration-300 bg-red-500 text-white font-bold"><Link href="https://github.com/benjimiles/NYC-Sushi" target="_blank">Github</Link></button>
-                  <button className="text-center rounded-md px-4 py-2 m-2 hover:bg-blue-800 duration-300 bg-blue-500 text-white font-bold"><Link href="https://sushi-eatery-h7xhgdwqp-seyuan111.vercel.app/" target="_blank">Project</Link></button>
-                </div>  
-                </div>
-              </div>
-            </div>
+          <ProjectCard
+          image={Sushi}
+          title="Sushi Project"
+          description="Used with HTML, CSS, and JavaScript."
+          githubLink="https://github.com/benjimiles/NYC-Sushi"
+          projectLink="https://sushi-eatery-h7xhgdwqp-seyuan111.vercel.app/"
+          />
 
-            <div className="shadow-lg shadow-gray-600 group container rounded-md flex flex-col justify-center items-center mx-auto mb-8 content-div">
-              <div>
-                <span>
-                  <Image src={WickedWines} height={200} width={250}></Image>
-                </span>
-                <div className="pt-6 text-center">
-                  <p className="font-bold">Wicked Wines</p>
-                  <p>This is built with React and Tailwind</p>
-                  <div className="flex justify-center space-x-4">
-                    <button className="text-center rounded-md px-4 py-2 m-2 hover:bg-red-800 duration-300 bg-red-500 text-white font-bold"><Link href="https://github.com/seyuan111/WickedWines" target="_blank">Github</Link></button>
-                    <button className="text-center rounded-md px-4 py-2 m-2 hover:bg-blue-800 duration-300 bg-blue-500 text-white font-bold"><Link href="https://wicked-wines-6did8tc87-seyuan111.vercel.app/" target="_blank">Project</Link></button>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <ProjectCard
+          image={WickedWines}
+          title="WickedWines"
+          description="Used with HTML, CSS, and JavaScript."
+          githubLink="https://github.com/seyuan111/WickedWines"
+          projectLink="https://wicked-wines.vercel.app/"
+          />
 
-            <div className="shadow-lg shadow-gray-600 group container rounded-md flex flex-col justify-center items-center mx-auto mb-8 content-div">
-              <div>
-                <span>
-                  <Image src={DeansList} height={200} width={250}></Image>
-                </span>
-                <div className="pt-6 text-center">
-                  <p className="font-bold">The Deans List</p>
-                  <p>This is built with NextJS along with Backend JavaScript and MongoDB</p>
-                  <div className="flex justify-center space-x-4">
-                    <button className="text-center rounded-md px-4 py-2 m-2 hover:bg-red-800 duration-300 bg-red-500 text-white font-bold"><Link href="https://github.com/seyuan111/MyDeansList" target="_blank">Github</Link></button>
-                    <button className="text-center rounded-md px-4 py-2 m-2 hover:bg-blue-800 duration-300 bg-blue-500 text-white font-bold"><Link href="https://my-deans-list.vercel.app/" target="_blank">Project</Link></button>
-                  </div>  
-                </div>
-              </div>
-            </div>
+          <ProjectCard
+          image={DeansList}
+          title="DeansList"
+          description="Used with HTML, CSS, and JavaScript."
+          githubLink="https://github.com/seyuan111/MyDeansList"
+          projectLink="https://my-deans-list.vercel.app/"
+          />
 
-            <div className="shadow-lg shadow-gray-600 group container rounded-md flex flex-col justify-center items-center mx-auto mb-8 content-div">
-              <div>
-                <span>
-                  <Image src={PharmRx} height={200} width={250}></Image>
-                </span>
-                <div className="pt-6 text-center">
-                  <p className="font-bold">PharmRx</p>
-                  <p>This is used with React, Tailwind and react router</p>
-                  <div className="flex justify-center space-x-4">
-                    <button className="text-center rounded-md px-4 py-2 m-2 hover:bg-red-800 duration-300 bg-red-500 text-white font-bold"><Link href="https://github.com/seyuan111/PharmRx" target="_blank">Github</Link></button>
-                    <button className="text-center rounded-md px-4 py-2 m-2 hover:bg-blue-800 duration-300 bg-blue-500 text-white font-bold"><Link href="https://pharm-rx.vercel.app/" target="_blank">Project</Link></button>
-                  </div>  
-                </div>
-              </div>
-            </div>
+          <ProjectCard
+          image={PharmRx}
+          title="PharmRx"
+          description="Used with HTML, CSS, and JavaScript."
+          githubLink="https://github.com/seyuan111/PharmRx"
+          projectLink="https://pharm-rx.vercel.app/"
+          />
 
-            <div className="shadow-lg shadow-gray-600 group container rounded-md flex flex-col justify-center items-center mx-auto mb-8 content-div">
-              <div>
-                <span>
-                  <Image src={Connect} height={200} width={250}></Image>
-                </span>
-                <div className="pt-6 text-center">
-                  <p className="font-bold">Connect 4</p>
-                  <p>This is built with JavaScript, HTML, and CSS.</p>
-                  <div className="flex justify-center space-x-4">
-                    <button className="text-center rounded-md px-4 py-2 m-2 hover:bg-red-800 duration-300 bg-red-500 text-white font-bold"><Link href="https://github.com/seyuan111/Connect-4" target="_blank">Github</Link></button>
-                    <button className="text-center rounded-md px-4 py-2 m-2 hover:bg-blue-800 duration-300 bg-blue-500 text-white font-bold"><Link href="https://connect4app.netlify.app/" target="_blank">Project</Link></button>
-                  </div>    
-                </div>
-              </div>
-            </div>
+          <ProjectCard
+          image={Connect}
+          title="Connect 4"
+          description="Used with HTML, CSS, and JavaScript."
+          githubLink="https://github.com/seyuan111/Connect-4"
+          projectLink="https://connect4app.netlify.app/"
+          />
 
           </div>
 

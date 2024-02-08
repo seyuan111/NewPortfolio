@@ -54,6 +54,7 @@ const Hero = () => {
         building full-stack applications</p>
 
         <Typewriter
+        className="text-blue-200"
         options={{
           strings: ['HTML', 'CSS', 'JavaScript', 'Node', 'Express', 'MongoDB', 'React', 'Next'],
           autoStart: true,
