@@ -5,32 +5,29 @@ import { FaTwitter, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-    
-    
-
-<footer className="bg-slate-200 dark:bg-gray-900">
-<div className="mx-auto w-full max-w-screen-xl p-4 py-2">
-  <div className="sm:flex sm:items-center sm:justify-between">
-      <div className="flex mt-4 sm:justify-center sm:mt-0">
-          <Link href="https://www.linkedin.com/in/sean-yuan-7965b5123/" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-              <span><FaLinkedin /></span>
-          </Link>
-          <Link href="https://twitter.com/seyuan1111" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-              <span><FaTwitter /></span>
-          </Link>
-          <Link href="https://github.com/seyuan111" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-              <span><FaGithub /></span>
-          </Link>
-          <Link href="https://www.instagram.com/seyuan111/" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-              <span><FaInstagram /></span>
-          </Link>
-              <span className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">ysean54@yahoo.com</span>
-      </div>
-  </div>
-</div>
-</footer>
-
-
+      <footer className="bg-slate-200 dark:bg-gray-900">
+        <div className="mx-auto w-full max-w-screen-xl p-4 py-4">
+          <div className="flex flex-col sm:flex-row justify-center items-center">
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="https://www.linkedin.com/in/sean-yuan-7965b5123/" className="text-gray-500 hover:text-gray-900 active:text-blue-400 dark:hover:text-white sm:ml-5 mt-2 sm:mt-0 text-xl">
+                <span><FaLinkedin /></span>
+              </Link>
+              <Link href="https://twitter.com/seyuan1111" className="text-gray-500 hover:text-gray-900 dark:hover:text-white active:text-blue-400 sm:ml-5 mt-2 sm:mt-0 text-xl">
+                <span><FaTwitter /></span>
+              </Link>
+              <Link href="https://github.com/seyuan111" className="text-gray-500 hover:text-gray-900 dark:hover:text-white active:text-blue-400 sm:ml-5 mt-2 sm:mt-0 text-xl">
+                <span><FaGithub /></span>
+              </Link>
+              <Link href="https://www.instagram.com/seyuan111/" className="text-gray-500 hover:text-gray-900 dark:hover:text-white active:text-blue-400 sm:ml-5 mt-2 sm:mt-0 text-xl">
+                <span><FaInstagram /></span>
+              </Link>
+            </div>
+            <div className="text-gray-500 hover:text-gray-900 dark:hover:text-white mt-4 ml-4 sm:mt-0 text-xl">
+              ysean54@yahoo.com
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
