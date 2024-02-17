@@ -63,7 +63,7 @@ const Hero = () => {
       />
 
         <div>
-          <button><Link className="group text-xl text-white px-6 py-3 my-2 rounded-md bg-gray-400 flex items-center hover:bg-black duration-300" href="https://docs.google.com/document/d/1Fn0YlAT7r5QCfNNefyHRsO0xpyC1PYDCkxxhIImHUzY/edit" target="_blank">Resume <span className="group-hover:rotate-90 duration-300"><FaArrowRight className="ml-2" size={20}/></span></Link></button></div>
+          <button><Link className="group text-xl text-white px-6 py-3 my-2 rounded-md bg-gray-400 flex items-center hover:bg-black duration-300" href="https://drive.google.com/file/d/1JnHuZSUQ4KzyOsg4e3yLlInqKip0Ik4V/view" target="_blank">Resume <span className="group-hover:rotate-90 duration-300"><FaArrowRight className="ml-2" size={20}/></span></Link></button></div>
         </div>
 
     </div>
