@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    color-scheme: dark;
+  }
+
 .content-div{
     background-repeat: no-repeat;
     background-size: cover;

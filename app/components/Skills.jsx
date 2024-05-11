@@ -2,11 +2,11 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <div id="Skills" className="bg-slate-600 text-blue-300">
+    <div id="Skills" className="bg-neutral-900 text-white">
         <div className="max-w-[1000px] mx-auto p-6 py-[200px] flex flex-col justify-center w-full h-full">
-            <div className="pb-8">
-                <p className="text-3xl font-bold inline border-b-4 border-gray-300">My Skills</p>
-            </div>
+        <h1 className="text-4xl sm:text-5xl text-center tracking-wide underline mb-6">
+            My <span className="bg-gradient-to-r from-blue-300 to-blue-500 text-transparent bg-clip-text">Skills</span>.
+        </h1>
 
             <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-6 text-center py-8">
                 <div>

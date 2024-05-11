@@ -23,7 +23,7 @@ const NavBar = () => {
     };
 
   return (
-    <div className="fixed w-full h-[70px] flex justify-between items-center px-4 bg-slate-500 text-blue-300">
+    <div className="fixed w-full h-[70px] flex justify-between items-center px-4 border-neutral-700/80 bg-neutral-600/60 text-white">
 
         <div className="text-[#66bfbf] text-3xl border-2 font-Italliano rounded-md px-4 py-2 font-bold cursor-pointer">
             <h1><Link href='/'>SY</Link></h1>
@@ -41,7 +41,7 @@ const NavBar = () => {
             {!nav ? <GiHamburgerMenu className="text-2xl" /> : <FaTimes className="text-2xl" />}
         </div>
 
-        <ul className={!nav ? "hidden" : "duration-400 absolute top-0 left-0 w-full h-screen bg-slate-800 text-blue-300 flex flex-col justify-center items-center font-bold tracking-widest"}>
+        <ul className={!nav ? "hidden" : "duration-400 ease-in-out absolute top-0 left-0 w-full h-screen bg-neutral-900/70 text-white flex flex-col justify-center items-center font-bold tracking-widest"}>
             <li className="py-4 cursor-pointer text-2xl" onClick={() => scrollToElement("Home")}>Home</li>
             <li className="py-4 cursor-pointer text-2xl" onClick={() => scrollToElement("About")}>About</li>
             <li className="py-4 cursor-pointer text-2xl" onClick={() => scrollToElement("Skills")}>Skills</li>

@@ -7,12 +7,12 @@ import 'tailwindcss/tailwind.css';
 
 const Hero = () => {
   return (
-    <div id="Home" className="w-full h-screen bg-slate-600">
+    <div id="Home" className="w-full h-screen bg-neutral-900">
 
       <div className="px-8 max-w-[1000px] mx-auto flex flex-col font-Cinzel justify-center h-full">
         <Typewriter 
         onInit={(typewriter) => { 
-          typewriter.typeString('<span class="text-blue-300 font-bold text-2xl">Hello, I am</span>') 
+          typewriter.typeString('<span class="text-neutral-300 font-bold text-2xl">Hello, I am</span>') 
             .callFunction(() => { 
               console.log('String typed out!'); 
             }) 
@@ -25,7 +25,7 @@ const Hero = () => {
       />
         <Typewriter 
         onInit={(typewriter) => { 
-          typewriter.typeString('<span class="text-4xl font-bold sm:text-5xl text-blue-200">Sean Yuan</span>') 
+          typewriter.typeString('<span class="text-4xl font-bold sm:text-5xl text-white">Sean Yuan</span>') 
             .callFunction(() => { 
               console.log('String typed out!'); 
             }) 
@@ -38,7 +38,7 @@ const Hero = () => {
       />
         <Typewriter 
         onInit={(typewriter) => { 
-          typewriter.typeString('<span class="text-4xl font-bold sm:text-5xl text-blue-400">I am a full-stack developer</span>') 
+          typewriter.typeString('<span class="text-4xl font-bold sm:text-5xl text-neutral-300">I am a full-stack developer</span>') 
             .callFunction(() => { 
               console.log('String typed out!'); 
             }) 
@@ -49,7 +49,7 @@ const Hero = () => {
             .start(); 
         }} 
       /> 
-        <p className="py-4 text-blue-200 max-w-[700px] font-bold">I work in various languages such as HTML, CSS, and JavaScript
+        <p className="py-4 text-white max-w-[700px] font-bold">I work in various languages such as HTML, CSS, and JavaScript
         as well as Node, Express MongoDB, React and Next. I am focusing on
         building full-stack applications</p>
 
@@ -63,7 +63,7 @@ const Hero = () => {
       />
 
         <div>
-          <button><Link className="group text-xl text-white px-6 py-3 my-2 rounded-md bg-gray-400 flex items-center hover:bg-black duration-300" href="https://drive.google.com/file/d/1JnHuZSUQ4KzyOsg4e3yLlInqKip0Ik4V/view" target="_blank">Resume <span className="group-hover:rotate-90 duration-300"><FaArrowRight className="ml-2" size={20}/></span></Link></button></div>
+          <button><Link className="group text-xl text-white px-6 py-3 my-2 rounded-md border-2 flex items-center hover:bg-black duration-300" href="https://drive.google.com/file/d/1JnHuZSUQ4KzyOsg4e3yLlInqKip0Ik4V/view" target="_blank">Resume <span className="group-hover:rotate-90 duration-300"><FaArrowRight className="ml-2" size={20}/></span></Link></button></div>
         </div>
 
     </div>

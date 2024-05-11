@@ -3,21 +3,21 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Sushi from '../assets/Sushi.png'
 import Snake from '../assets/Snake.png'
-import PharmRx from '../assets/PharmRx.png'
-import WickedWines from '../assets/WickedWines.png'
+import BusinessCard from '../assets/BusinessCard.png'
+import Flippers from '../assets/Flippers.png'
 import DeansList from '../assets/DeansList.png'
 import Connect from '../assets/Connect.png'
 import ProjectCard from '../components/ProjectCard'
 
 const Projects = () => {
   return (
-    <div id="Projects" className="bg-slate-600 text-blue-300">
+    <div id="Projects" className="bg-neutral-800">
 
         <div className="max-w-[1000px] mx-auto p-6 flex flex-col justify-center w-full h-full">
 
-          <div className="pb-8">
-            <p className="text-3xl font-bold inline border-b-4 border-gray-300">My Projects</p>
-          </div>
+          <h1 className="text-4xl sm:text-5xl text-center tracking-wide underline mb-6">
+            My <span className="bg-gradient-to-r from-blue-300 to-blue-500 text-transparent bg-clip-text">Projects</span>.
+          </h1>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-6">
 
@@ -38,11 +38,11 @@ const Projects = () => {
           />
 
           <ProjectCard
-          image={WickedWines}
-          title="WickedWines"
-          description="Used with HTML, CSS, and JavaScript."
-          githubLink="https://github.com/seyuan111/WickedWines"
-          projectLink="https://wicked-wines.vercel.app/"
+          image={Flippers}
+          title="Flippers"
+          description="Used with React Vite and Tailwind."
+          githubLink="https://github.com/seyuan111/flipperZone"
+          projectLink="https://flipper-zone.vercel.app/"
           />
 
           <ProjectCard
@@ -54,11 +54,11 @@ const Projects = () => {
           />
 
           <ProjectCard
-          image={PharmRx}
-          title="PharmRx"
-          description="Used with HTML, CSS, and JavaScript."
-          githubLink="https://github.com/seyuan111/PharmRx"
-          projectLink="https://pharm-rx.vercel.app/"
+          image={BusinessCard}
+          title="Business Card"
+          description="Used with MERN and tailwind."
+          githubLink="https://github.com/seyuan111/BusinessCardsFrontend"
+          projectLink="https://business-cards-frontend.vercel.app/"
           />
 
           <ProjectCard
