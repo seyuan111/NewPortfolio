@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="px-8 max-w-[1000px] mx-auto flex flex-col font-Cinzel justify-center h-full">
         <Typewriter 
         onInit={(typewriter) => { 
-          typewriter.typeString('<span class="text-neutral-300 font-bold text-2xl">Hello, I am</span>') 
+          typewriter.typeString('<span class="text-white text-3xl">Hello, I am</span>') 
             .callFunction(() => { 
               console.log('String typed out!'); 
             }) 
@@ -25,7 +25,7 @@ const Hero = () => {
       />
         <Typewriter 
         onInit={(typewriter) => { 
-          typewriter.typeString('<span class="text-4xl font-bold sm:text-5xl text-white">Sean Yuan</span>') 
+          typewriter.typeString('<span class="text-4xl sm:text-5xl text-white">Sean Yuan</span>') 
             .callFunction(() => { 
               console.log('String typed out!'); 
             }) 
@@ -38,7 +38,7 @@ const Hero = () => {
       />
         <Typewriter 
         onInit={(typewriter) => { 
-          typewriter.typeString('<span class="text-4xl font-bold sm:text-5xl text-neutral-300">I am a full-stack developer</span>') 
+          typewriter.typeString('<span class="text-4xl sm:text-5xl text-white">I am a full-stack developer</span>') 
             .callFunction(() => { 
               console.log('String typed out!'); 
             }) 
@@ -49,12 +49,12 @@ const Hero = () => {
             .start(); 
         }} 
       /> 
-        <p className="py-4 text-white max-w-[700px] font-bold">I work in various languages such as HTML, CSS, and JavaScript
+        <p className="py-4 tracking-wide text-neutral-400 max-w-[700px]">I work in various languages such as HTML, CSS, and JavaScript
         as well as Node, Express MongoDB, React and Next. I am focusing on
         building full-stack applications</p>
 
         <Typewriter
-        className="text-blue-200"
+        className="text-neutral-500"
         options={{
           strings: ['HTML', 'CSS', 'JavaScript', 'Node', 'Express', 'MongoDB', 'React', 'Next'],
           autoStart: true,

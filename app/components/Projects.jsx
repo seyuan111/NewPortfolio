@@ -15,8 +15,8 @@ const Projects = () => {
 
         <div className="max-w-[1000px] mx-auto p-6 flex flex-col justify-center w-full h-full">
 
-          <h1 className="text-4xl sm:text-5xl text-center tracking-wide underline mb-6">
-            My <span className="bg-gradient-to-r from-blue-300 to-blue-500 text-transparent bg-clip-text">Projects</span>.
+          <h1 className="text-3xl sm:text-4xl text-center tracking-wide underline mb-6">
+            My <span className="bg-gradient-to-r from-blue-300 to-blue-500 text-transparent bg-clip-text">Projects</span>
           </h1>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-6">
@@ -32,7 +32,7 @@ const Projects = () => {
           <ProjectCard
           image={Sushi}
           title="Sushi Project"
-          description="Used with HTML, CSS, and JavaScript."
+          description="Built in Next, Tailwind, and Django."
           githubLink="https://github.com/benjimiles/NYC-Sushi"
           projectLink="https://sushi-eatery-h7xhgdwqp-seyuan111.vercel.app/"
           />
@@ -48,7 +48,7 @@ const Projects = () => {
           <ProjectCard
           image={DeansList}
           title="DeansList"
-          description="Used with HTML, CSS, and JavaScript."
+          description="Built in MERN and tailwind css."
           githubLink="https://github.com/seyuan111/MyDeansList"
           projectLink="https://my-deans-list.vercel.app/"
           />

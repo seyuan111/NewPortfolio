@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div id="Contact" className="w-full min-h-screen bg-neutral-900 flex justify-center items-center p-4">
         <form action="" className="flex flex-col max-w-xl w-full">
-          <h1 className="text-4xl sm:text-5xl text-center tracking-wide underline mb-6">
+          <h1 className="text-3xl sm:text-4xl text-center tracking-wide underline mb-6">
           Contact
           </h1>
             <input className="my-4 bg-neutral-800 border border-gray-300 text-white sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" placeholder="Name" name="name"></input>
