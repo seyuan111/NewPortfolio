@@ -6,7 +6,7 @@ import ProjectButton from '../components/ProjectButton'
 const ProjectCard = ({ image, title, description, githubLink, projectLink }) => {
     return (
         <div className="flex flex-col items-center justify-between bg-neutral-700/90 p-4 rounded-lg shadow-lg">
-        <Image src={image} alt={title} className="w-full h-auto mb-4 brightness-50" />
+        <Image src={image} alt={title} className="w-full h-auto mb-4 brightness-50 rounded" />
         <div className="flex flex-col items-center">
           <h2 className="text-xl mb-2">{title}</h2>
           <p className="text-sm text-neutral-400 mb-4">{description}</p>

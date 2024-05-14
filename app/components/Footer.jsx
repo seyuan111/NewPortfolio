@@ -7,18 +7,18 @@ const Footer = () => {
     <div>
       <footer className="bg-neutral-600/80 dark:bg-gray-900">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-4">
-          <div className="flex flex-col sm:flex-row justify-center items-center">
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link href="https://www.linkedin.com/in/sean-yuan-7965b5123/" className="text-white hover:text-gray-900 dark:hover:text-white sm:ml-5 mt-2 sm:mt-0 text-xl">
+          <div className="flex flex-col sm:flex-row justify-center items-center sm:gap-6">
+            <div className="flex flex-wrap justify-center gap-10 sm:gap-4">
+              <Link href="https://www.linkedin.com/in/sean-yuan-7965b5123/" className="text-white hover:text-gray-900 dark:hover:text-white sm:ml-5 mt-2 sm:mt-0 text-2xl sm:text-xl">
                 <span><FaLinkedin /></span>
               </Link>
-              <Link href="https://twitter.com/seyuan1111" className="text-white hover:text-gray-900 dark:hover:text-white sm:ml-5 mt-2 sm:mt-0 text-xl">
+              <Link href="https://twitter.com/seyuan1111" className="text-white hover:text-gray-900 dark:hover:text-white sm:ml-5 mt-2 sm:mt-0 text-2xl sm:text-xl">
                 <span><FaTwitter /></span>
               </Link>
-              <Link href="https://github.com/seyuan111" className="text-white hover:text-gray-900 dark:hover:text-white sm:ml-5 mt-2 sm:mt-0 text-xl">
+              <Link href="https://github.com/seyuan111" className="text-white hover:text-gray-900 dark:hover:text-white sm:ml-5 mt-2 sm:mt-0 text-2xl sm:text-xl">
                 <span><FaGithub /></span>
               </Link>
-              <Link href="https://www.instagram.com/seyuan111/" className="rounded-md hover:text-gray-900 dark:hover:text-white sm:ml-5 mt-2 sm:mt-0 text-xl">
+              <Link href="https://www.instagram.com/seyuan111/" className="rounded-md hover:text-gray-900 dark:hover:text-white sm:ml-5 mt-2 sm:mt-0 text-2xl sm:text-xl">
                 <span><FaInstagram /></span>
               </Link>
             </div>

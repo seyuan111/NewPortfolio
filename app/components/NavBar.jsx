@@ -53,25 +53,25 @@ const NavBar = () => {
 
             <ul>
                 <li className="rounded-md w-[140px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-4px] duration-300 bg-gradient-to-r from-blue-700 to-blue-900 text-transparent px-2">
-                    <Link className="flex justify-between items-center w-full text-white" href="https://www.linkedin.com/in/sean-yuan-7965b5123/">LinkedIn <FaLinkedin size={25} /></Link>
+                    <Link className="flex justify-between items-center w-full text-white" href="https://www.linkedin.com/in/sean-yuan-7965b5123/" target="_blank">LinkedIn <FaLinkedin size={25} /></Link>
                 </li>
             </ul>
 
             <ul className="mt-4">
                 <li className="rounded-md w-[140px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-4px] duration-300 bg-gradient-to-r from-blue-700 to-blue-900 px-2">
-                    <Link className="flex justify-between items-center w-full text-white" href="https://twitter.com/seyuan1111">Twitter <FaTwitter size={25} /></Link>
+                    <Link className="flex justify-between items-center w-full text-white" href="https://twitter.com/seyuan1111" target="_blank">Twitter <FaTwitter size={25} /></Link>
                 </li>
             </ul>
 
             <ul className="mt-4">
                 <li className="rounded-md w-[140px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-4px] duration-300 bg-gradient-to-r from-blue-700 to-blue-900 px-2">
-                    <Link className="flex justify-between items-center w-full text-white" href="https://github.com/seyuan111">Github <FaGithub size={25} /></Link>
+                    <Link className="flex justify-between items-center w-full text-white" href="https://github.com/seyuan111" target="_blank">Github <FaGithub size={25} /></Link>
                 </li>
             </ul>
 
             <ul className="mt-4">
                 <li className="rounded-md w-[140px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-4px] duration-300 bg-gradient-to-r from-blue-700 to-blue-900 px-2">
-                    <Link className="flex justify-between items-center w-full text-white" href="https://www.instagram.com/seyuan111/">Instagram <FaInstagram size={25} /></Link>
+                    <Link className="flex justify-between items-center w-full text-white" href="https://www.instagram.com/seyuan111/" target="_blank">Instagram <FaInstagram size={25} /></Link>
                 </li>
             </ul>
 
