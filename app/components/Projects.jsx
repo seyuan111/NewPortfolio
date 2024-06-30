@@ -34,7 +34,7 @@ const Projects = () => {
           title="Sushi Project"
           description="Built in Next, Tailwind, and Django."
           githubLink="https://github.com/benjimiles/NYC-Sushi"
-          projectLink="https://sushi-eatery-h7xhgdwqp-seyuan111.vercel.app/"
+          projectLink="https://nyc-sushi.vercel.app/"
           />
 
           <ProjectCard
