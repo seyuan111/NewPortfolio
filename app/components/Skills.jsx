@@ -1,4 +1,5 @@
 import React from 'react'
+import { DiJavascript } from "react-icons/di";
 
 const Skills = () => {
   return (
@@ -20,7 +21,7 @@ const Skills = () => {
                 </div>
                 
                 <div>
-                    <img className="w-30 h-20 mx-auto brightness-75" src="https://www.ramzamani.com/media/skills/logo-javascript-png-html-code-allows-to-embed-javascript-logo-in-your-website-587.png"></img>
+                    <DiJavascript className="w-20 h-20 mx-auto brightness-75" />
                     <p className="my-2">JavaScript</p>
                 </div>
 
