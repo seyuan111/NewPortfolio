@@ -24,7 +24,7 @@ const Projects = () => {
           <ProjectCard
           image={Snake}
           title="The Snake Game"
-          description="Used with HTML, CSS, and JavaScript."
+          description="The snake eats the food and it grows bigger. If the snake touches the wall you lose."
           githubLink="https://github.com/seyuan111/SnakeGame"
           projectLink="https://thesnakegame1.netlify.app/"
           />
@@ -32,7 +32,7 @@ const Projects = () => {
           <ProjectCard
           image={Sushi}
           title="Sushi Project"
-          description="Built in Next, Tailwind, and Django."
+          description="Do you want to order your sushi. Here is the sushi menu for people who wants to open up a Japanese Restaurant."
           githubLink="https://github.com/benjimiles/NYC-Sushi"
           projectLink="https://nyc-sushi.vercel.app/"
           />
@@ -40,7 +40,7 @@ const Projects = () => {
           <ProjectCard
           image={Flippers}
           title="Flippers"
-          description="Used with React Vite and Tailwind."
+          description="Anyone uses Flippers? Here is the flipper webiste where you can sell your flipper devices."
           githubLink="https://github.com/seyuan111/flipperZone"
           projectLink="https://flipper-zone.vercel.app/"
           />
@@ -48,7 +48,7 @@ const Projects = () => {
           <ProjectCard
           image={DeansList}
           title="DeansList"
-          description="Built in MERN and tailwind css."
+          description="This website allows you to add your top candidates and it also creates business cards."
           githubLink="https://github.com/seyuan111/MyDeansList"
           projectLink="https://my-deans-list.vercel.app/"
           />
@@ -56,7 +56,7 @@ const Projects = () => {
           <ProjectCard
           image={Japan}
           title="Little-Japan"
-          description="React Vite."
+          description="Check out the Japanese Menu. This is the Japanese website version of grubhub for anyone who wants to open up a Japanese restaurant."
           githubLink="https://github.com/seyuan111/little-japan"
           projectLink="https://little-japan.vercel.app/"
           />
@@ -64,7 +64,7 @@ const Projects = () => {
           <ProjectCard
           image={Connect}
           title="Connect 4"
-          description="Used with HTML, CSS, and JavaScript."
+          description="This is the connect 4 game where you have to connect 4 in order to win the game."
           githubLink="https://github.com/seyuan111/Connect-4"
           projectLink="https://connect4app.netlify.app/"
           />
