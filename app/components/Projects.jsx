@@ -3,10 +3,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Sushi from '../assets/Sushi.png'
 import Snake from '../assets/Snake.png'
-import BusinessCard from '../assets/BusinessCard.png'
 import Flippers from '../assets/Flippers.png'
 import DeansList from '../assets/DeansList.png'
 import Connect from '../assets/Connect.png'
+import Japan from '../assets/Little-Japan.png'
 import ProjectCard from '../components/ProjectCard'
 
 const Projects = () => {
@@ -54,11 +54,11 @@ const Projects = () => {
           />
 
           <ProjectCard
-          image={BusinessCard}
-          title="Business Card"
-          description="Used with MERN and tailwind."
-          githubLink="https://github.com/seyuan111/BusinessCardsFrontend"
-          projectLink="https://business-cards-frontend.vercel.app/"
+          image={Japan}
+          title="Little-Japan"
+          description="React Vite."
+          githubLink="https://github.com/seyuan111/little-japan"
+          projectLink="https://little-japan.vercel.app/"
           />
 
           <ProjectCard
