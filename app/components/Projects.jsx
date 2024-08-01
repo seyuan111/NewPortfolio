@@ -31,7 +31,7 @@ const Projects = () => {
 
           <ProjectCard
           image={Sushi}
-          title="Sushi Project"
+          title="NYC Sushi"
           description="Do you want to order your sushi. Here is the sushi menu for people who wants to open up a Japanese Restaurant."
           githubLink="https://github.com/benjimiles/NYC-Sushi"
           projectLink="https://nyc-sushi.vercel.app/"

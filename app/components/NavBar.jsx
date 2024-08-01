@@ -59,7 +59,7 @@ const NavBar = () => {
 
             <ul className="mt-4">
                 <li className="rounded-md w-[140px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-4px] duration-300 bg-gradient-to-r from-blue-700 to-blue-900 px-2">
-                    <Link className="flex justify-between items-center w-full text-white" href="https://twitter.com/seyuan1111" target="_blank">Twitter <FaTwitter size={25} /></Link>
+                    <Link className="flex justify-between items-center w-full text-white" href="https://twitter.com/Emperor_Sean1" target="_blank">Twitter <FaTwitter size={25} /></Link>
                 </li>
             </ul>
 
@@ -71,7 +71,7 @@ const NavBar = () => {
 
             <ul className="mt-4">
                 <li className="rounded-md w-[140px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-4px] duration-300 bg-gradient-to-r from-blue-700 to-blue-900 px-2">
-                    <Link className="flex justify-between items-center w-full text-white" href="https://www.instagram.com/seyuan111/" target="_blank">Instagram <FaInstagram size={25} /></Link>
+                    <Link className="flex justify-between items-center w-full text-white" href="https://www.instagram.com/emperor_sean1/" target="_blank">Instagram <FaInstagram size={25} /></Link>
                 </li>
             </ul>
 
