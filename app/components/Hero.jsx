@@ -12,19 +12,6 @@ const Hero = () => {
       <div className="px-8 max-w-[1000px] mx-auto flex flex-col font-Cinzel justify-center h-full">
         <Typewriter 
         onInit={(typewriter) => { 
-          typewriter.typeString('<span class="text-white text-3xl">Hello, I am</span>') 
-            .callFunction(() => { 
-              console.log('String typed out!'); 
-            }) 
-            .pauseFor(2000) 
-            .callFunction(() => { 
-              console.log('All strings were deleted'); 
-            }) 
-            .start(); 
-        }} 
-      />
-        <Typewriter 
-        onInit={(typewriter) => { 
           typewriter.typeString('<span class="text-4xl sm:text-5xl text-white">Sean Yuan</span>') 
             .callFunction(() => { 
               console.log('String typed out!'); 
@@ -38,7 +25,7 @@ const Hero = () => {
       />
         <Typewriter 
         onInit={(typewriter) => { 
-          typewriter.typeString('<span class="text-3xl sm:text-4xl text-white">I am a full-stack developer</span>') 
+          typewriter.typeString('<span class="text-3xl sm:text-4xl text-white">Software Engineer</span>') 
             .callFunction(() => { 
               console.log('String typed out!'); 
             }) 
@@ -49,9 +36,8 @@ const Hero = () => {
             .start(); 
         }} 
       /> 
-        <p className="py-4 tracking-wide text-neutral-400 max-w-[700px]">I work in various languages such as HTML, CSS, and JavaScript
-        as well as Node, Express MongoDB, React and Next. I am focusing on
-        building full-stack applications</p>
+        <p className="py-4 tracking-wide text-neutral-400 max-w-[700px]">Work in various languages such as HTML, CSS, and JavaScript
+        as well as Node, Express MongoDB, React and Next. Focused on developing full stack application</p>
 
         <Typewriter
         className="text-neutral-500"

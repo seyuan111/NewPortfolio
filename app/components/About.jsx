@@ -15,7 +15,7 @@ const About = () => {
                     About <span className="bg-gradient-to-r from-blue-300 to-blue-500 text-transparent bg-clip-text">Me</span>
                 </h1>
                 <div className="text-neutral-400 tracking-wide">
-                    <p>I am a Software Engineer in New York. I am proficient in both frontend and backend development. I have knowledge in HTML, CSS, Javascript, Node, MongoDB, and React. As a software Engineer, I love to connect with others, build my networks, and build projects with group members.</p>
+                    <p>I'm a Software Engineer based in New York, specializing in both frontend and backend development. With expertise in HTML, CSS, JavaScript, Node.js, MongoDB, and React, I enjoy creating seamless, dynamic applications. I'm passionate about connecting with fellow professionals, expanding my network, and collaborating on projects with team members to bring innovative ideas to life.</p>
                 </div>
             </div>
         </div>
