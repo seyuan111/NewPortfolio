@@ -49,7 +49,7 @@ const Hero = () => {
       />
 
         <div>
-          <button><Link className="group text-xl text-white px-6 py-3 mt-6 rounded-md border-2 flex items-center hover:bg-black duration-300" href="https://drive.google.com/file/d/11iqtB7QqdeczM9rQEhGzS6-G7IDL1Bsg/view" target="_blank">Resume <span className="group-hover:rotate-90 duration-300"><FaArrowRight className="ml-2" size={20}/></span></Link></button></div>
+          <button><Link className="group text-xl text-white px-6 py-3 mt-6 rounded-md border-2 flex items-center hover:bg-black duration-300" href="https://docs.google.com/document/d/15_0s0U5B2bqNrOnf3HUQMPU2d3EgaoMroY7x7X8dXKo/edit" target="_blank">Resume <span className="group-hover:rotate-90 duration-300"><FaArrowRight className="ml-2" size={20}/></span></Link></button></div>
         </div>
 
     </div>
