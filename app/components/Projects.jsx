@@ -8,6 +8,7 @@ import DeansList from '../assets/DeansList.png'
 import Connect from '../assets/Connect.png'
 import Japan from '../assets/Little-Japan.png'
 import ProjectCard from '../components/ProjectCard'
+import PharmRx from '../assets/PharmRx.png'
 
 const Projects = () => {
   return (
@@ -62,11 +63,11 @@ const Projects = () => {
           />
 
           <ProjectCard
-          image={Connect}
-          title="Connect 4"
-          description="This is the connect 4 game where you have to connect 4 in order to win the game."
-          githubLink="https://github.com/seyuan111/Connect-4"
-          projectLink="https://connect4app.netlify.app/"
+          image={PharmRx}
+          title="PharmRx"
+          description="This is PharmRx which allows you to order your medication and have them delivered to your home."
+          githubLink="https://github.com/seyuan111/PharmRx"
+          projectLink="https://pharm-rx.vercel.app/"
           />
 
           </div>
