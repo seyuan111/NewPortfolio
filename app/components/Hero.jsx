@@ -7,7 +7,7 @@ import 'tailwindcss/tailwind.css';
 
 const Hero = () => {
   return (
-    <div id="Home" className="w-full h-screen bg-neutral-900 flex items-center justify-center">
+    <div id="Home" className="w-full h-screen bg-gradient-to-b from-black to-gray-900 flex items-center justify-center">
       <div className="px-8 max-w-[1000px] mx-auto flex flex-col justify-center h-full text-center">
         
         <motion.h1 

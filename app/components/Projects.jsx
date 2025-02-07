@@ -11,7 +11,7 @@ import PharmRx from '../assets/PharmRx.png';
 
 const Projects = () => {
   return (
-    <div id="Projects" className="bg-gradient-to-r from-neutral-800 to-neutral-900 min-h-screen py-20">
+    <div id="Projects" className="bg-gradient-to-b from-black to-gray-900 min-h-screen py-20">
       <div className="max-w-[1200px] mx-auto px-6 flex flex-col justify-center w-full h-full text-white">
 
         {/* Heading Section */}

@@ -21,7 +21,7 @@ const ProjectCard = ({ image, title, description, githubLink, projectLink }) => 
         <div className="flex space-x-4">
           <Link 
             href={githubLink} 
-            className="border-2 border-neutral-500 text-white px-6 py-2 rounded-md transition duration-300 hover:bg-black hover:text-white"
+            className="border-2 border-neutral-700 text-white px-6 py-2 rounded-md transition duration-300 hover:bg-black hover:text-white"
             target="_blank"
           >
             GitHub
@@ -29,7 +29,7 @@ const ProjectCard = ({ image, title, description, githubLink, projectLink }) => 
           
           <Link 
             href={projectLink} 
-            className="bg-neutral-500 hover:bg-black text-white px-6 py-2 rounded-md transition duration-300"
+            className="bg-gradient-to-b from-black to-gray-900 hover:bg-black text-white px-6 py-2 rounded-md transition duration-300"
             target="_blank"
           >
             Project

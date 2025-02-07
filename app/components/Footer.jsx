@@ -4,7 +4,7 @@ import { FaTwitter, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-800 py-6 text-white">
+    <footer className="bg-neutral-900 py-6 text-white">
       <div className="max-w-screen-xl mx-auto px-6 flex flex-col items-center">
         {/* Social Links */}
         <div className="flex space-x-6 mb-4">

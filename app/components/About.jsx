@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div id="About" className="w-full min-h-screen flex justify-center items-center bg-neutral-800 py-20">
+    <div id="About" className="w-full min-h-screen flex justify-center items-center bg-gradient-to-b from-black to-gray-900 py-20">
       <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-12 px-6">
         <motion.div 
           initial={{ opacity: 0, x: -50 }} 
