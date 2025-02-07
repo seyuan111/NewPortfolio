@@ -1,84 +1,66 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes, FaTwitter, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
-import Link from 'next/link'
+import { Link as ScrollLink } from "react-scroll";
+import Link from 'next/link';
 
 const NavBar = () => {
-    const [nav, setNav] = useState(false)
-    const handleClick = () => setNav(!nav)
+    const [nav, setNav] = useState(false);
+    const handleClick = () => setNav(!nav);
 
-    const handleNavLinkClick = () => {
-        setNav(false);
-    };
+    return (
+        <nav className="border-b-2 fixed w-full h-[70px] flex justify-between items-center px-6 bg-gradient-to-r from-black to-gray-700 text-white shadow-lg z-50">
+            {/* Logo */}
+            <div className="text-4xl font-bold font-Italliano cursor-pointer">
+                <h1><Link href='/'>SY</Link></h1>
+            </div>
 
-    
-    const scrollToElement = (elementId) => {
-        scroll.scrollTo(document.getElementById(elementId).offsetTop, {
-            duration: 500,
-            smooth: true
-        });
-        handleNavLinkClick(); // Close the navbar after scrolling
-    };
-
-  return (
-    <div className="fixed w-full h-[70px] flex justify-between items-center px-4 border-neutral-700/80 bg-neutral-600/90 text-white z-20">
-
-        <div className="text-white text-3xl border-2 font-Italliano rounded-md px-4 py-2 font-bold cursor-pointer">
-            <h1><Link href='/'>SY</Link></h1>
-        </div>
-
-            <ul className="hidden md:flex font-QuickSand text-xl">
-                <li className="cursor-pointer px-4 font-bold tracking-widest hover:border-b-2 hover:border-neutral-700 duration-300"><ScrollLink to="Home" smooth={true} duration={500}>Home</ScrollLink></li>
-                <li className="cursor-pointer px-4 font-bold tracking-widest hover:border-b-2 hover:border-neutral-700 duration-300"><ScrollLink to="About" smooth={true} duration={500}>About</ScrollLink></li>
-                <li className="cursor-pointer px-4 font-bold tracking-widest hover:border-b-2 hover:border-neutral-700 duration-300"><ScrollLink to="Skills" smooth={true} duration={500}>Skills</ScrollLink></li>
-                <li className="cursor-pointer px-4 font-bold tracking-widest hover:border-b-2 hover:border-neutral-700 duration-300"><ScrollLink to="Projects" smooth={true} duration={500}>Projects</ScrollLink></li>
-                <li className="cursor-pointer px-4 font-bold tracking-widest hover:border-b-2 hover:border-neutral-700 duration-300"><ScrollLink to="Contact" smooth={true} duration={500}>Contact</ScrollLink></li>
+            {/* Desktop Menu */}
+            <ul className="hidden md:flex space-x-8 font-QuickSand text-lg">
+                {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+                    <li key={item} className="relative group cursor-pointer">
+                        <ScrollLink to={item} smooth={true} duration={500} className="relative z-10 px-3 py-2">
+                            {item}
+                        </ScrollLink>
+                        <span className="absolute left-0 bottom-0 w-full h-[2px] bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </li>
+                ))}
             </ul>
 
-        <div onClick={handleClick} className="md:hidden z-10">
-            {!nav ? <GiHamburgerMenu className="text-2xl" /> : <FaTimes className="text-2xl" />}
-        </div>
+            {/* Mobile Menu Icon */}
+            <div onClick={handleClick} className="md:hidden z-50 cursor-pointer text-3xl">
+                {!nav ? <GiHamburgerMenu /> : <FaTimes />}
+            </div>
 
-        <ul className={!nav ? "hidden" : "duration-400 ease-in-out absolute top-0 left-0 w-full h-screen bg-neutral-700 text-white flex flex-col justify-center items-center font-bold tracking-widest"}>
-            <li className="py-4 cursor-pointer text-2xl" onClick={() => scrollToElement("Home")}>Home</li>
-            <li className="py-4 cursor-pointer text-2xl" onClick={() => scrollToElement("About")}>About</li>
-            <li className="py-4 cursor-pointer text-2xl" onClick={() => scrollToElement("Skills")}>Skills</li>
-            <li className="py-4 cursor-pointer text-2xl" onClick={() => scrollToElement("Projects")}>Projects</li>
-            <li className="py-4 cursor-pointer text-2xl" onClick={() => scrollToElement("Contact")}>Contact</li>
-        </ul>
+            {/* Mobile Menu */}
+            <div className={`fixed top-0 left-0 w-full h-screen bg-black transform ${nav ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 md:hidden flex flex-col justify-center items-center text-2xl`}> 
+                {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+                    <ScrollLink key={item} to={item} smooth={true} duration={500} onClick={handleClick} className="py-4 cursor-pointer text-white hover:text-blue-400 transition-colors duration-300">
+                        {item}
+                    </ScrollLink>
+                ))}
+            </div>
 
-        <div className="hidden md:flex fixed flex-col top-[35%] left-0">
-
-            <ul>
-                <li className="rounded-md w-[140px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-4px] duration-300 bg-gradient-to-r from-blue-700 to-blue-900 text-transparent px-2">
-                    <Link className="flex justify-between items-center w-full text-white" href="https://www.linkedin.com/in/sean-yuan-7965b5123/" target="_blank">LinkedIn <FaLinkedin size={25} /></Link>
-                </li>
-            </ul>
-
-            <ul className="mt-4">
-                <li className="rounded-md w-[140px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-4px] duration-300 bg-gradient-to-r from-blue-700 to-blue-900 px-2">
-                    <Link className="flex justify-between items-center w-full text-white" href="https://twitter.com/Emperor_Sean1" target="_blank">Twitter <FaTwitter size={25} /></Link>
-                </li>
-            </ul>
-
-            <ul className="mt-4">
-                <li className="rounded-md w-[140px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-4px] duration-300 bg-gradient-to-r from-blue-700 to-blue-900 px-2">
-                    <Link className="flex justify-between items-center w-full text-white" href="https://github.com/seyuan111" target="_blank">Github <FaGithub size={25} /></Link>
-                </li>
-            </ul>
-
-            <ul className="mt-4">
-                <li className="rounded-md w-[140px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-4px] duration-300 bg-gradient-to-r from-blue-700 to-blue-900 px-2">
-                    <Link className="flex justify-between items-center w-full text-white" href="https://www.instagram.com/emperor_sean1/" target="_blank">Instagram <FaInstagram size={25} /></Link>
-                </li>
-            </ul>
-
-        </div>
-
-    </div>
-  )
+            {/* Social Icons */}
+            <div className="hidden md:flex fixed flex-col top-[35%] left-0 space-y-4">
+                {[{
+                    name: 'LinkedIn', icon: <FaLinkedin size={25} />, url: 'https://www.linkedin.com/in/sean-yuan-7965b5123/'
+                }, {
+                    name: 'Twitter', icon: <FaTwitter size={25} />, url: 'https://twitter.com/Emperor_Sean1'
+                }, {
+                    name: 'Github', icon: <FaGithub size={25} />, url: 'https://github.com/seyuan111'
+                }, {
+                    name: 'Instagram', icon: <FaInstagram size={25} />, url: 'https://www.instagram.com/emperor_sean1/'
+                }].map(({ name, icon, url }) => (
+                    <Link key={name} href={url} target="_blank" rel="noopener noreferrer" className="group flex items-center space-x-3 w-[170px] h-[60px] ml-[-140px] hover:ml-0 bg-gray-800 rounded-md transition-all duration-300 p-4">
+                        <span className="text-white font-bold">{name}</span>
+                        {icon}
+                    </Link>
+                ))}
+            </div>
+        </nav>
+    );
 }
 
-export default NavBar
+export default NavBar;

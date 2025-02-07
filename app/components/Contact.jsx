@@ -1,19 +1,47 @@
-import React from 'react'
+import React from 'react';
 
 const Contact = () => {
   return (
-    <div id="Contact" className="w-full min-h-screen bg-neutral-900 flex justify-center items-center p-4">
-        <form action="" className="flex flex-col max-w-xl w-full">
-          <h1 className="text-3xl sm:text-4xl text-center tracking-wide underline mb-6">
+    <div id="Contact" className="w-full min-h-screen bg-neutral-900 flex justify-center items-center p-6">
+      <form action="" className="flex flex-col max-w-2xl w-full bg-neutral-800 p-8 rounded-xl shadow-xl space-y-6">
+        {/* Heading */}
+        <h1 className="text-3xl sm:text-4xl text-center tracking-wide text-white font-semibold mb-6">
           Contact
-          </h1>
-            <input className="my-4 bg-neutral-800 border border-gray-300 text-white sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" placeholder="Name" name="name"></input>
-            <input className="mb-4 bg-neutral-800 border border-gray-300 text-white sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" placeholder="email" name="email"></input>
-            <textarea className="bg-neutral-800 border border-gray-300 text-white sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="message" rows="6" placeholder="message"></textarea>
-            <button className="mt-6 w-full text-white border-2 bg-neutral-600 hover:bg-neutral-800 duration-300 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Connect</button>  
-        </form>
+        </h1>
+
+        {/* Name Input */}
+        <input 
+          className="bg-neutral-700 border border-gray-600 text-white sm:text-sm rounded-lg focus:ring-4 focus:ring-blue-500 focus:border-blue-500 block w-full p-3 transition duration-300 hover:bg-neutral-600"
+          type="text" 
+          placeholder="Name" 
+          name="name" 
+        />
+
+        {/* Email Input */}
+        <input 
+          className="bg-neutral-700 border border-gray-600 text-white sm:text-sm rounded-lg focus:ring-4 focus:ring-blue-500 focus:border-blue-500 block w-full p-3 transition duration-300 hover:bg-neutral-600"
+          type="email" 
+          placeholder="Email" 
+          name="email" 
+        />
+
+        {/* Message Textarea */}
+        <textarea 
+          className="bg-neutral-700 border border-gray-600 text-white sm:text-sm rounded-lg focus:ring-4 focus:ring-blue-500 focus:border-blue-500 block w-full p-3 transition duration-300 hover:bg-neutral-600"
+          name="message" 
+          rows="6" 
+          placeholder="Message"
+        ></textarea>
+
+        {/* Submit Button */}
+        <button 
+          className="w-full border-2 border-neutral-200 text-white font-medium rounded-lg px-6 py-3 transition duration-300 hover:from-blue-600 hover:to-blue-800 focus:ring-4 focus:ring-blue-500 focus:outline-none"
+        >
+          Connect
+        </button>
+      </form>
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
