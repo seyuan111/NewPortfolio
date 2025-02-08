@@ -12,13 +12,13 @@ const NavBar = () => {
     return (
         <nav className="border-b-2 fixed w-full h-[70px] flex justify-between items-center px-6 bg-gradient-to-r from-black to-gray-700 text-white shadow-lg z-50">
             {/* Logo */}
-            <div className="text-4xl font-bold font-Italliano cursor-pointer">
+            <div className="border-2 px-4 rounded-md py-1 text-4xl font-bold font-Italliano cursor-pointer">
                 <h1><Link href='/'>SY</Link></h1>
             </div>
 
             {/* Desktop Menu */}
             <ul className="hidden md:flex space-x-8 font-QuickSand text-lg">
-                {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+                {['Home', 'About', 'Projects', 'Skills', 'Contact'].map((item) => (
                     <li key={item} className="relative group cursor-pointer">
                         <ScrollLink to={item} smooth={true} duration={500} className="relative z-10 px-3 py-2">
                             {item}
@@ -35,7 +35,7 @@ const NavBar = () => {
 
             {/* Mobile Menu */}
             <div className={`fixed top-0 left-0 w-full h-screen bg-black transform ${nav ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 md:hidden flex flex-col justify-center items-center text-2xl`}> 
-                {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+                {['Home', 'About', 'Projects', 'Skills', 'Contact'].map((item) => (
                     <ScrollLink key={item} to={item} smooth={true} duration={500} onClick={handleClick} className="py-4 cursor-pointer text-white hover:text-blue-400 transition-colors duration-300">
                         {item}
                     </ScrollLink>
@@ -53,7 +53,7 @@ const NavBar = () => {
                 }, {
                     name: 'Instagram', icon: <FaInstagram size={25} />, url: 'https://www.instagram.com/emperor_sean1/'
                 }].map(({ name, icon, url }) => (
-                    <Link key={name} href={url} target="_blank" rel="noopener noreferrer" className="group flex items-center space-x-3 w-[170px] h-[60px] ml-[-140px] hover:ml-0 bg-gray-800 rounded-md transition-all duration-300 p-4">
+                    <Link key={name} href={url} target="_blank" rel="noopener noreferrer" className="group flex items-center space-x-3 w-[170px] h-[60px] ml-[-140px] hover:ml-0 bg-gray-700 rounded-md transition-all duration-300 p-4">
                         <span className="text-white font-bold">{name}</span>
                         {icon}
                     </Link>
