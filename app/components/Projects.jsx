@@ -8,6 +8,7 @@ import DeansList from '../assets/DeansList.png';
 import Japan from '../assets/Little-Japan.png';
 import ProjectCard from '../components/ProjectCard';
 import PharmRx from '../assets/PharmRx.png';
+import WickedWines from '../assets/WickedWines.png'
 
 const Projects = () => {
   return (
@@ -34,11 +35,11 @@ const Projects = () => {
           />
 
           <ProjectCard
-            image={Sushi}
-            title="NYC Sushi"
-            description="Order sushi from a Japanese restaurant with an interactive menu."
-            githubLink="https://github.com/benjimiles/NYC-Sushi"
-            projectLink="https://nyc-sushi.vercel.app/"
+            image={WickedWines}
+            title="WickedWines"
+            description="Order wines and check out events at a winery with an interactive menu."
+            githubLink="https://github.com/seyuan111/WickedWines"
+            projectLink="https://wicked-wines.vercel.app/"
           />
 
           <ProjectCard
