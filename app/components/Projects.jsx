@@ -9,6 +9,7 @@ import Japan from '../assets/Little-Japan.png';
 import ProjectCard from '../components/ProjectCard';
 import PharmRx from '../assets/PharmRx.png';
 import WickedWines from '../assets/WickedWines.png'
+import BusinessCards from '../assets/BusinessCards.png'
 
 const Projects = () => {
   return (
@@ -51,11 +52,11 @@ const Projects = () => {
           />
 
           <ProjectCard
-            image={DeansList}
-            title="DeansList"
-            description="Add top candidates to your list and generate business cards."
-            githubLink="https://github.com/seyuan111/MyDeansList"
-            projectLink="https://my-deans-list.vercel.app/"
+            image={BusinessCards}
+            title="Business Cards"
+            description="Make your own phonebook online. You can keep track of your business cards online."
+            githubLink="https://github.com/seyuan111/Business-Card-Frontend"
+            projectLink="https://business-card-frontend.vercel.app/"
           />
 
           <ProjectCard
