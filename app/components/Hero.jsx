@@ -42,7 +42,7 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }} 
           transition={{ duration: 0.8, delay: 1 }}
         >
-          <Link href="https://docs.google.com/document/d/1NVcH_IsYKG9OTShI_nlT95EaRL3qVB8YmnJm_Gnv1iw/edit?tab=t.0" target="_blank">
+          <Link href="https://docs.google.com/document/d/1sTjk-N_6ibKlcqfzZql7n2suue-I1ngo/edit" target="_blank">
             <button className="group text-xl text-white px-6 py-3 mt-6 rounded-md border-2 flex items-center mx-auto hover:bg-black hover:border-neutral-700 transition duration-300">
               Resume <span className="group-hover:rotate-90 transition duration-300"><FaArrowRight className="ml-2" size={20}/></span>
             </button>
