@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiJavascript, DiMongodb } from "react-icons/di";
+import { DiJavascript, DiMongodb, DiNodejs } from "react-icons/di";
 
 const Skills = () => {
   return (
@@ -14,7 +14,7 @@ const Skills = () => {
             { name: "HTML", src: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png" },
             { name: "CSS", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png" },
             { name: "JavaScript", icon: <DiJavascript className="text-yellow-400 w-20 h-20 mx-auto" /> },
-            { name: "Node JS", src: "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" },
+            { name: "Node JS", icon: <DiNodejs className="text-white w-20 h-20 mx-auto" /> },
             { name: "MongoDB", icon: <DiMongodb className="text-green-600 w-20 h-20 mx-auto" /> },
             { name: "ReactJS", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" }
           ].map((skill, index) => (
