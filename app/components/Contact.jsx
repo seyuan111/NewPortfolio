@@ -29,8 +29,8 @@ const Contact = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.06),transparent_45%)]" />
       </div>
 
-      <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-6 md:grid md:grid-cols-[1.1fr_1fr] md:items-start">
-        <div className="space-y-6">
+      <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-6 md:grid md:grid-cols-[1.05fr_1fr] md:items-start md:gap-12 md:px-8">
+        <div className="space-y-6 md:max-w-xl md:justify-self-start">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slate-200">
             Contact
           </div>
@@ -41,7 +41,7 @@ const Contact = () => {
             Need to connect? Contact my email and I will reply to you soon.
           </p>
 
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-1 md:max-w-sm">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-sm shadow-fuchsia-500/10">
               <div className="flex items-center gap-3 text-sm text-slate-200">
                 <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500/20 text-emerald-200">
@@ -58,7 +58,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="relative rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8 shadow-2xl shadow-fuchsia-500/15 backdrop-blur">
+        <div className="relative rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8 shadow-2xl shadow-fuchsia-500/15 backdrop-blur md:max-w-xl md:justify-self-end w-full">
           <div className="mb-4 text-left">
             <p className="text-sm text-slate-300">Send a message</p>
             <h3 className="text-2xl font-semibold text-white">Send me a message</h3>

@@ -41,24 +41,6 @@ const NavBar = () => {
                     </ScrollLink>
                 ))}
             </div>
-
-            {/* Social Icons */}
-            <div className="hidden md:flex fixed flex-col top-[35%] left-0 space-y-4">
-                {[{
-                    name: 'LinkedIn', icon: <FaLinkedin size={25} />, url: 'https://www.linkedin.com/in/sean-yuan-7965b5123/'
-                }, {
-                    name: 'Twitter', icon: <FaTwitter size={25} />, url: 'https://twitter.com/Emperor_Sean1'
-                }, {
-                    name: 'Github', icon: <FaGithub size={25} />, url: 'https://github.com/seyuan111'
-                }, {
-                    name: 'Instagram', icon: <FaInstagram size={25} />, url: 'https://www.instagram.com/emperor_sean1/'
-                }].map(({ name, icon, url }) => (
-                    <Link key={name} href={url} target="_blank" rel="noopener noreferrer" className="group flex items-center space-x-3 w-[170px] h-[60px] ml-[-140px] hover:ml-0 bg-gray-700 rounded-md transition-all duration-300 p-4">
-                        <span className="text-white font-bold">{name}</span>
-                        {icon}
-                    </Link>
-                ))}
-            </div>
         </nav>
     );
 }

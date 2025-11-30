@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import Link from 'next/link';
-import { FaArrowRight, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaArrowRight, FaGithub, FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import 'tailwindcss/tailwind.css';
 
@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.06),transparent_45%)]" />
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 py-20 md:py-28 flex flex-col lg:flex-row gap-12 items-center">
+      <div className="max-w-6xl mx-auto px-6 pt-28 pb-16 sm:pt-28 sm:pb-20 md:pt-32 md:pb-28 flex flex-col lg:flex-row gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ const Hero = () => {
             I am a Software Engineer who works with Frontend and Backend JavaScript and MongoDb. I also work with mobile development using React Native.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4 pt-2">
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:items-start lg:justify-start gap-4 pt-2">
             <Link
               href="https://docs.google.com/document/d/1sTjk-N_6ibKlcqfzZql7n2suue-I1ngo/edit"
               target="_blank"
@@ -62,7 +62,7 @@ const Hero = () => {
             </Link>
           </div>
 
-          <div className="flex items-center justify-center lg:justify-start gap-4 text-sm text-slate-300 pt-3">
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 text-sm text-slate-300 pt-3 w-full max-w-xl md:max-w-2xl mx-auto lg:mx-0">
             <Link
               href="https://github.com/seyuan111"
               target="_blank"
@@ -85,6 +85,13 @@ const Hero = () => {
             >
               <FaInstagram />
               Instagram
+            </Link>
+            <Link
+              href="https://x.com/Emperor_Sean1"
+              className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 transition hover:border-fuchsia-300/50 hover:text-white"
+            >
+              <FaTwitter />
+              Twitter
             </Link>
           </div>
         </motion.div>

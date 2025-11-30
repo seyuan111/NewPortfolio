@@ -25,13 +25,13 @@ const About = () => {
           viewport={{ once: true }}
           className="relative flex justify-center"
         >
-          <div className="relative w-full max-w-[420px] overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3 shadow-2xl shadow-fuchsia-500/15 backdrop-blur">
+          <div className="relative w-full max-w-[280px] sm:max-w-[360px] overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3 shadow-2xl shadow-fuchsia-500/15 backdrop-blur">
             <div className="absolute inset-x-6 top-6 h-24 rounded-2xl bg-gradient-to-r from-fuchsia-500/25 via-cyan-400/25 to-indigo-500/20 blur-3xl" />
             <Image
               className="relative z-10 h-full w-full rounded-2xl object-cover shadow-xl brightness-95 transition duration-300 hover:brightness-100"
               src={Sean}
-              height={360}
-              width={420}
+              height={320}
+              width={360}
               alt="Sean Yuan"
             />
             <div className="relative z-10 mt-4 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-100">
