@@ -50,7 +50,7 @@ const NavBar = () => {
                         className="hidden sm:inline-flex items-center gap-2 rounded-full border border-cyan-400/70 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-100 shadow-sm shadow-cyan-500/40 transition hover:-translate-y-[1px] hover:border-cyan-300 hover:text-white hover:shadow-cyan-400/50"
                     >
                         <span className="h-2 w-2 rounded-full bg-cyan-300" />
-                        Let's talk
+                        Let&apos;s talk
                     </ScrollLink>
 
                     {/* Mobile Menu Icon */}
@@ -91,7 +91,7 @@ const NavBar = () => {
                         className="flex items-center justify-center gap-2 rounded-full border border-cyan-400/70 bg-cyan-400/10 px-8 py-3 text-base font-semibold text-cyan-100 shadow-sm shadow-cyan-500/40 transition hover:-translate-y-[1px] hover:border-cyan-300 hover:text-white hover:shadow-cyan-400/50"
                     >
                         <span className="h-2 w-2 rounded-full bg-cyan-300" />
-                        Let's talk
+                        Let&apos;s talk
                     </ScrollLink>
                 </div>
             </div>
